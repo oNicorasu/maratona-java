@@ -1,4 +1,7 @@
 ## **Maratona Java - Resumo dos Tópicos**
+
+Estudo de Java do zero até Junior!
+
 1. -[x] ~~**Introdução ao Curso**~~
 2. -[x] ~~**Instalação e Configuração**~~
     - -[x] ~~Download da JDK e configuração do ambiente~~
