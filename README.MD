@@ -6,11 +6,11 @@ Estudo de Java do zero até Junior!
 2. -[x] ~~**Instalação e Configuração**~~
     - -[x] ~~Download da JDK e configuração do ambiente~~
     - -[x] ~~Configuração da IDE IntelliJ~~
-3. -[ ] **Fundamentos do Java**
+3. -[x] ~~**Fundamentos do Java**~~
     - -[x] ~~Estrutura de código e pacotes~~
     - -[x] ~~Comentários e convenções~~
-    - -[ ] Tipos primitivos e casting
-    - -[ ] Strings e manipulação de texto
+    - -[x] ~~Tipos primitivos e casting~~
+    - -[x] ~~Strings e manipulação de texto~~
 4. -[ ] **Operadores**
     - -[ ] Aritméticos, relacionais, lógicos, atribuição
 5. -[ ] **Estruturas de Controle de Fluxo**

@@ -21,6 +21,7 @@ Usar nome do site invertido em primeiro, logo depois nome do projeto e
 >   * Isso é um comentário <b>Javadoc</b>
 >   */
 >   ```
+>4. Não comentar o seu código, apenas javadocs ou faça uma documentação, caso precise muito.
 
 ---
    
@@ -51,11 +52,28 @@ Usar nome do site invertido em primeiro, logo depois nome do projeto e
 
 <BR>
 
-> 1. Boas práticas escrever as variaveis em inglês.<br>
->    1. Nome de classes são todas as inicias maiúsculas.<br>
->    2. Nome de variáveis usam apenas a inicial maiúscula se forem palavras compostas.
->>Ex: <br>
-> public class AulaDeJava { <br>
->  int idadeEmAnos = 10;<br>
-> }
+4. Conversão Literal
+   - Faz com que possamos trocar o tipo de dados e colocá-lo em outro tipo.
+   - Ex:`float salary = 2500.53F;`. Nesse caso podemos ver que sem o 'F' o tipo colocado no float é de um 'double' e com o 'F' podemos força-lo a ser um float.
+5. Casting
+   - Força um certo tipo a caber em outro mesmo que ele esteja a estourar o tipo.
+   - Ex: `int age = (int) 10000000000L;`
+   - Aqui esse número está a estourar o 'int', mas ele força ele a caber, mas pode ser que isso não aconteça.
+6. String
+   - `String nome = "Nicolas Mendes";`
+   - ‘String’ é diferente dos outros tipos, pois é uma Classe, logo tem alguns métodos(funcionalidades) que os outros não tem.
+
+<BR>
+
+>1. Boas práticas escrever as variáveis em inglês.<br>
+   >>1. Nome de classes são todas as inicias maiúsculas.<br>
+   >>2. Nome de variáveis usam apenas a inicial maiúscula se forem palavras compostas.
+
+Ex: 
+```
+public class AulaDeJava { 
+   int idadeEmAnos = 10;
+}
+```
+
 
