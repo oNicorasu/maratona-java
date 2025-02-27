@@ -11,8 +11,8 @@ Estudo de Java do zero até Junior!
     - -[x] ~~Comentários e convenções~~
     - -[x] ~~Tipos primitivos e casting~~
     - -[x] ~~Strings e manipulação de texto~~
-4. -[ ] **Operadores**
-    - -[ ] Aritméticos, relacionais, lógicos, atribuição
+4. -[x] ~~**Operadores**~~
+    - -[x] ~~Aritméticos, relacionais, lógicos, atribuição~~
 5. -[ ] **Estruturas de Controle de Fluxo**
     - -[ ] Condicionais (if, else if, switch, operador ternário)
     - -[ ] Laços de repetição (for, while, do-while)

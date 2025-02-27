@@ -76,4 +76,46 @@ public class AulaDeJava {
 }
 ```
 
+---
+
+## 📅 - 27/02/2025⤵️
+
+### Operadores
+1. Básicos:
+   1. soma: +
+   2. subtração: -
+   3. divisão: /
+   4. multiplicação: *
+   5. resto: % 
+2. Relacionais:
+   1. menor: <
+   2. maior: >
+   3. menor ou igual: <=
+   4. maior ou igual: >=
+   5. igual: ==
+   6. diferente: !=
+3. Lógicos:
+   1. AND = &&
+   2. OR = ||
+   3. NOT = !
+4. Atribuição:
+   1. = 
+   2. += 
+   3. -=
+   4. *=
+   5. /=
+   6. %=
+5. Unários:
+   1. Incrementa em 1: ++ 
+   2. Decrementa em 1: --
+> Obs: Existe uma diferença de por antes ou depois da variável no caso dos 'unitários'.
+> > ``` 
+> > int contador = 0;
+> > contador++;
+> > System.out.println(contador); // contador = 1;
+> > System.out.println(contador++); // contador = 1; A variável foi usada antes de incrementar.
+> > System.out.println(contador); // contador = 2;
+> > System.out.println(++contador); // contador = 3; Foi incrementado antes de usar a variável.
+> > ```
+
 
