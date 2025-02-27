@@ -6,6 +6,6 @@ public class Aula03ExercicioTiposPrimitivos {
         String endereço = "Rua do Mario, 171";
         float salario = 1500.00F;
         String data = "26/02/2025";
-        System.out.printf("Eu %s, morando no endereço %s, confirmo que recebi o salário de %f, na data %s",nome,endereço,salario,data);
+        System.out.printf("Eu %s, morando no endereço %s, confirmo que recebi o salário de %f, na data %s", nome, endereço, salario, data);
     }
 }

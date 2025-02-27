@@ -14,7 +14,7 @@ Estudo de Java do zero até Junior!
 4. -[x] ~~**Operadores**~~
     - -[x] ~~Aritméticos, relacionais, lógicos, atribuição~~
 5. -[ ] **Estruturas de Controle de Fluxo**
-    - -[ ] Condicionais (if, else if, switch, operador ternário)
+    - -[X] ~~Condicionais (if, else if, switch, operador ternário)~~
     - -[ ] Laços de repetição (for, while, do-while)
     - -[ ] Controle de fluxo (break, continue)
 6. -[ ] **Arrays**

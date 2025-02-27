@@ -16,12 +16,13 @@ Usar nome do site invertido em primeiro, logo depois nome do projeto e
 
 >1. Comentário de uma linha - //
 >2. Comentário de multiplas linhas /* ... */
->3. ```
->   /**
->   * Isso é um comentário <b>Javadoc</b>
->   */
->   ```
->4. Não comentar o seu código, apenas javadocs ou faça uma documentação, caso precise muito.
+>3. Javadoc:
+> ```
+>  /**
+>  * Isso é um comentário <b>Javadoc</b>
+>  */
+> ```
+>3. Não comentar o seu código, apenas javadocs ou faça uma documentação, caso precise muito.
 
 ---
    
@@ -38,19 +39,17 @@ Usar nome do site invertido em primeiro, logo depois nome do projeto e
    7. long
    8. boolean
 3. Tabela de tamanhos:
-
-| Tipos   | Tamanho em Bytes | Descrição                                                                             |
-|---------|------------------|---------------------------------------------------------------------------------------|
-| byte    | 1 byte           | Armazena todos os números de -127 até 127                                             |
-| short   | 2 bytes          | Armazena todos os números de -32,767 até 32,767                                       |
-| int     | 4 bytes          | Armazena todos os números de -2,147,483,648 até 2,147,483,647                         |
-| long    | 8 bytes          | Armazena todos os números de -9,223,372,036,854,775,808 até 9,223,372,036,854,775,807 |
-| float   | 4 bytes          | Armazena os números decimais de até 7 casas após a vírgula.                           |
-| double  | 8 bytes          | Armazena os números decimais de até 16 casas após a vírgula.                          |
-| boolean | 1 bit            | Armazena valores verdadeiro ou falso.                                                 |
-| char    | 2 bytes          | Armazena uma letra/um valor ASCII                                                     |
-
-<BR>
+   
+   | Tipos   | Tamanho em Bytes | Descrição                                                                             |
+   |---------|------------------|---------------------------------------------------------------------------------------|
+   | byte    | 1 byte           | Armazena todos os números de -127 até 127                                             |
+   | short   | 2 bytes          | Armazena todos os números de -32,767 até 32,767                                       |
+   | int     | 4 bytes          | Armazena todos os números de -2,147,483,648 até 2,147,483,647                         |
+   | long    | 8 bytes          | Armazena todos os números de -9,223,372,036,854,775,808 até 9,223,372,036,854,775,807 |
+   | float   | 4 bytes          | Armazena os números decimais de até 7 casas após a vírgula.                           |
+   | double  | 8 bytes          | Armazena os números decimais de até 16 casas após a vírgula.                          |
+   | boolean | 1 bit            | Armazena valores verdadeiro ou falso.                                                 |
+   | char    | 2 bytes          | Armazena uma letra/um valor ASCII                                                     |
 
 4. Conversão Literal
    - Faz com que possamos trocar o tipo de dados e colocá-lo em outro tipo.
@@ -118,4 +117,50 @@ public class AulaDeJava {
 > > System.out.println(++contador); // contador = 3; Foi incrementado antes de usar a variável.
 > > ```
 
+### Estruturas Condicionais
 
+1. if
+   ```
+      if(condição){ // Se true faz o bloco de códigos abaixo
+         [código]
+      }
+   ```
+2. else
+   ```
+      if(condição){ // Se falso pula para o bloco de cógido do 'else'
+         [código]
+      } else {
+         [código]
+      }
+   ```
+3. else-if
+   ```
+      if(condição){ // Se falso pula para o bloco de cógido do 2° if
+         [código]
+      } else if {
+         [código]
+      }
+   ```
+4. Operador Ternário
+   1. ```
+      // if else normal
+      (condição) ? (o que fai fazer se for verdadeiro) : (o que fai fazer se for falso);
+      
+      ```
+   2. ```
+      // if else-if else
+      (1° condição) ? (verdadeiro) : (2° condição) ? (verdadeiro) : (falso);
+      
+      ```
+5. Switch
+   ```
+   int num = 2;
+   switch (num){
+      case 1:
+         [código];
+         break;
+      case 2:
+         [código];
+         break;
+   }
+   ```
