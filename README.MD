@@ -13,10 +13,10 @@ Estudo de Java do zero até Junior!
     - -[x] ~~Strings e manipulação de texto~~
 4. -[x] ~~**Operadores**~~
     - -[x] ~~Aritméticos, relacionais, lógicos, atribuição~~
-5. -[ ] **Estruturas de Controle de Fluxo**
-    - -[X] ~~Condicionais (if, else if, switch, operador ternário)~~
-    - -[ ] Laços de repetição (for, while, do-while)
-    - -[ ] Controle de fluxo (break, continue)
+5. -[x] ~~**Estruturas de Controle de Fluxo**~~
+    - -[x] ~~Condicionais (if, else if, switch, operador ternário)~~
+    - -[x] ~~Laços de repetição (for, while, do-while)~~
+    - -[x] ~~Controle de fluxo (break, continue)~~
 6. -[ ] **Arrays**
     - -[ ] Simples, multidimensionais, foreach
 7. -[ ] **Programação Orientada a Objetos**

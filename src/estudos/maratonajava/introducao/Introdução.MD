@@ -3,9 +3,10 @@
 ---
 
 ## 📅 - 26/02/2025⤵️
+
 ### Organização do código em pacotes
 
-Usar nome do site invertido em primeiro, logo depois nome do projeto e 
+Usar nome do site invertido em primeiro, logo depois nome do projeto e
 <br> em seguida o nome do pacote.
 
 ***Ex:***
@@ -14,7 +15,7 @@ Usar nome do site invertido em primeiro, logo depois nome do projeto e
 
 ### Comentários
 
->1. Comentário de uma linha - //
+> 1. Comentário de uma linha - //
 >2. Comentário de multiplas linhas /* ... */
 >3. Javadoc:
 > ```
@@ -25,23 +26,23 @@ Usar nome do site invertido em primeiro, logo depois nome do projeto e
 >3. Não comentar o seu código, apenas javadocs ou faça uma documentação, caso precise muito.
 
 ---
-   
+
 ### Tipos Primitivos
 
 1. São escritos em letras minúsculas.
 2. Temos 8 tipos primitivos:
-   1. int
-   2. double
-   3. float
-   4. char
-   5. byte
-   6. short
-   7. long
-   8. boolean
+    1. int
+    2. double
+    3. float
+    4. char
+    5. byte
+    6. short
+    7. long
+    8. boolean
 3. Tabela de tamanhos:
-   
+
    | Tipos   | Tamanho em Bytes | Descrição                                                                             |
-   |---------|------------------|---------------------------------------------------------------------------------------|
+      |---------|------------------|---------------------------------------------------------------------------------------|
    | byte    | 1 byte           | Armazena todos os números de -127 até 127                                             |
    | short   | 2 bytes          | Armazena todos os números de -32,767 até 32,767                                       |
    | int     | 4 bytes          | Armazena todos os números de -2,147,483,648 até 2,147,483,647                         |
@@ -52,23 +53,26 @@ Usar nome do site invertido em primeiro, logo depois nome do projeto e
    | char    | 2 bytes          | Armazena uma letra/um valor ASCII                                                     |
 
 4. Conversão Literal
-   - Faz com que possamos trocar o tipo de dados e colocá-lo em outro tipo.
-   - Ex:`float salary = 2500.53F;`. Nesse caso podemos ver que sem o 'F' o tipo colocado no float é de um 'double' e com o 'F' podemos força-lo a ser um float.
+    - Faz com que possamos trocar o tipo de dados e colocá-lo em outro tipo.
+    - Ex:`float salary = 2500.53F;`. Nesse caso podemos ver que sem o 'F' o tipo colocado no float é de um 'double' e
+      com o 'F' podemos força-lo a ser um float.
 5. Casting
-   - Força um certo tipo a caber em outro mesmo que ele esteja a estourar o tipo.
-   - Ex: `int age = (int) 10000000000L;`
-   - Aqui esse número está a estourar o 'int', mas ele força ele a caber, mas pode ser que isso não aconteça.
+    - Força um certo tipo a caber em outro mesmo que ele esteja a estourar o tipo.
+    - Ex: `int age = (int) 10000000000L;`
+    - Aqui esse número está a estourar o 'int', mas ele força ele a caber, mas pode ser que isso não aconteça.
 6. String
-   - `String nome = "Nicolas Mendes";`
-   - ‘String’ é diferente dos outros tipos, pois é uma Classe, logo tem alguns métodos(funcionalidades) que os outros não tem.
+    - `String nome = "Nicolas Mendes";`
+    - ‘String’ é diferente dos outros tipos, pois é uma Classe, logo tem alguns métodos(funcionalidades) que os outros
+      não tem.
 
 <BR>
 
->1. Boas práticas escrever as variáveis em inglês.<br>
-   >>1. Nome de classes são todas as inicias maiúsculas.<br>
-   >>2. Nome de variáveis usam apenas a inicial maiúscula se forem palavras compostas.
+> 1. Boas práticas escrever as variáveis em inglês.<br>
+>> 1. Nome de classes são todas as inicias maiúsculas.<br>
+>>2. Nome de variáveis usam apenas a inicial maiúscula se forem palavras compostas.
 
-Ex: 
+Ex:
+
 ```
 public class AulaDeJava { 
    int idadeEmAnos = 10;
@@ -80,33 +84,35 @@ public class AulaDeJava {
 ## 📅 - 27/02/2025⤵️
 
 ### Operadores
+
 1. Básicos:
-   1. soma: +
-   2. subtração: -
-   3. divisão: /
-   4. multiplicação: *
-   5. resto: % 
+    1. soma: +
+    2. subtração: -
+    3. divisão: /
+    4. multiplicação: *
+    5. resto: %
 2. Relacionais:
-   1. menor: <
-   2. maior: >
-   3. menor ou igual: <=
-   4. maior ou igual: >=
-   5. igual: ==
-   6. diferente: !=
+    1. menor: <
+    2. maior: >
+    3. menor ou igual: <=
+    4. maior ou igual: >=
+    5. igual: ==
+    6. diferente: !=
 3. Lógicos:
-   1. AND = &&
-   2. OR = ||
-   3. NOT = !
+    1. AND = &&
+    2. OR = ||
+    3. NOT = !
 4. Atribuição:
-   1. = 
-   2. += 
-   3. -=
-   4. *=
-   5. /=
-   6. %=
+    1. =
+    2. +=
+    3. -=
+    4. *=
+    5. /=
+    6. %=
 5. Unários:
-   1. Incrementa em 1: ++ 
-   2. Decrementa em 1: --
+    1. Incrementa em 1: ++
+    2. Decrementa em 1: --
+
 > Obs: Existe uma diferença de por antes ou depois da variável no caso dos 'unitários'.
 > > ``` 
 > > int contador = 0;
@@ -142,12 +148,12 @@ public class AulaDeJava {
       }
    ```
 4. Operador Ternário
-   1. ```
+    1. ```
       // if else normal
       (condição) ? (o que fai fazer se for verdadeiro) : (o que fai fazer se for falso);
       
       ```
-   2. ```
+    2. ```
       // if else-if else
       (1° condição) ? (verdadeiro) : (2° condição) ? (verdadeiro) : (falso);
       
@@ -164,3 +170,31 @@ public class AulaDeJava {
          break;
    }
    ```
+
+## 📅 - 03/03/2025⤵️
+
+### Estruturas de Repetição
+
+1. While
+   ```
+   while(condição){
+      [código]
+      incrementar;
+   }
+   ```
+2. Do While
+   ```
+   Do {
+      [código]
+   }while (condição);
+   ```
+3. For
+   ```
+   for (declaração do contador; condição ; incremento do contador){
+      [código]
+   }
+   ```
+> Break and Continue
+> > - Break: serve para quebrar um loop(estrutura de repetição), pode ser usado dentro de um 'switch' ou loop apenas;
+> > - Continue: serve para pular para a próxima iteração do loop;
+   
