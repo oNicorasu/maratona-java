@@ -17,8 +17,8 @@ Estudo de Java do zero até Junior!
     - -[x] ~~Condicionais (if, else if, switch, operador ternário)~~
     - -[x] ~~Laços de repetição (for, while, do-while)~~
     - -[x] ~~Controle de fluxo (break, continue)~~
-6. -[ ] **Arrays**
-    - -[ ] Simples, multidimensionais, foreach
+6. -[x] ~~**Arrays**~~
+    - -[x] ~~Simples, multidimensionais, foreach~~
 7. -[ ] **Programação Orientada a Objetos**
     - -[ ] Classes e objetos
     - -[ ] Métodos e parâmetros (primitivos e referência)
