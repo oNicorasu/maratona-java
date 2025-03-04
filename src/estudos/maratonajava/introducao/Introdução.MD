@@ -123,8 +123,6 @@ public class AulaDeJava {
 > > System.out.println(++contador); // contador = 3; Foi incrementado antes de usar a variável.
 > > ```
 
----
-
 ### Estruturas Condicionais
 
 1. if
@@ -173,8 +171,6 @@ public class AulaDeJava {
    }
    ```
 
----
-
 ## 📅 - 03/03/2025⤵️
 
 ### Estruturas de Repetição
@@ -201,102 +197,4 @@ public class AulaDeJava {
 > Break and Continue
 > > - Break: serve para quebrar um loop(estrutura de repetição), pode ser usado dentro de um 'switch' ou loop apenas;
 > > - Continue: serve para pular para a próxima iteração do loop;
-
----
-
-## 📅 - 04/03/2025⤵️
-
-### Arrays
-```
-tipo[] name;
-tipo[] name = new tipo[tamanho];
-tipo[] name = {1,2,3,4,5}; // outro jeito de declaração;
-tipo[] name = new tipo[]{1,2,3,4,5}; // mais um outro jeito;
-```
-- Toda array é um objeto; 
-- Todo array inicializado tem que ter um tamanho declarado;
-- E na inicialização de cada posição do array tem um valor default por tipo;
-  1. int, short, long, byte = 0;
-  2. float, double = 0.0;
-  3. String = null;
-  4. char = '\u0000' = ' ';
-  5. boolean = false;
-- Não podemos acessar uma posição que não existe;
-- O tamanho do 'Array' não pode mudar dinamicamente 
-
->```
->  // Foreach
->  for (tipo name:arrayName){
->      [código];
->  }
->  ```
->> Esse tipo de 'for' é muito usado para imprimir o array. Primeiro colocando uma variável de referência de mesmo tipo que o array, logo depois um ':' e o nome do array desejado.
-> 
->> Assim ele vai acessar cada posição do array usando a variável de referência. Logo podemos utilizar a variável de referência para o objetivo do código, exemplo, imprimir o array. 
-
----
-
-### Arrays Multidimensionais
-
-```
-// Nesse tipo de declaração temos que dizer pelo menos o 1° tamanho;
-tipo[][] name = new tipo[tamanho][tamanho]; 
-```
-
-- Esquema de como seria uma Array Multidimencional de 3x3 de inteiros:
-
-
-- ![img_1.png](img_1.png)
-
-
-- Iniciando as Arrays:
-  1. ```
-     // Exemplo de declaração só com a 1° tamanho;
-     
-     int[][] arrayInt = new int[3][]; 
-     arrayInt[0] =  new int[2];
-     arrayInt[1] =  new int[3];
-     arrayInt[2] =  new int[6]; 
-     
-     // Assim podemos fazer cada array de tamanho diferentes;
-      ```
-  2. ```
-     // Exemplo declarando já os valores
-     
-     int[][] arrayInt = new int[3][]; 
-     
-     arrayInt[0] =  new int[]{1,2};
-     arrayInt[1] =  new int[]{1,2,3};
-     arrayInt[2] =  new int[]{1,2,3,4,5,6};
-     
-     /** 'arrayInt[0] = {1,2};' Quando lidamos com Arrays Multidimensionais não podemos
-      *  fazer esse tipo de iniciação, que no caso de um array normal poderíamos.
-     */
-      ```
-  3. ```
-     // Exemplo declarando já os valores de forma mais direta
-     
-     int[][] arrayInt1 = {{1,2}, {1,2,3}, {1,2,3,4,5,6}};
-      ```
-- Para acessar os valores dentro dessa matriz temos como usar o for ou o foreach:
-  - ```
-    // Imprimindo uma matriz com for
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length; j++) {
-                System.out.print(matriz[i][j] + " ");
-            }
-            System.out.print("\n");
-        }
-        System.out.print("\n");
-    ```
-  - ```
-    // Imprimindo uma matriz com foreach
-        for (int[] matriz1:matriz) {
-            for (int matriz2:matriz1) {
-                System.out.print(matriz2 + " ");
-            }
-            System.out.print("\n");
-        }
-    ```
-
----
+   
