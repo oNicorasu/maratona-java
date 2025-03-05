@@ -149,17 +149,15 @@ public class AulaDeJava {
          [código]
       }
    ```
-4. Operador Ternário
-    1. ```
-      // if else normal
-      (condição) ? (o que fai fazer se for verdadeiro) : (o que fai fazer se for falso);
-      
-      ```
-    2. ```
-      // if else-if else
-      (1° condição) ? (verdadeiro) : (2° condição) ? (verdadeiro) : (falso);
-      
-      ```
+   4. Operador Ternário
+       1. ```
+            // if else normal
+            (condição) ? (o que fai fazer se for verdadeiro) : (o que fai fazer se for falso);
+            ```
+       2. ```
+            // if else-if else
+            (1° condição) ? (verdadeiro) : (2° condição) ? (verdadeiro) : (falso);
+            ```
 5. Switch
    ```
    int num = 2;
