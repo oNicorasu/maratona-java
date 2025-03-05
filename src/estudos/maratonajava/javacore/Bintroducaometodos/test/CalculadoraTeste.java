@@ -7,5 +7,6 @@ public class CalculadoraTeste {
         Calculadora calc = new Calculadora();
         calc.somaDoisNumeros();
         calc.subtraiDoisNumeros();
+        calc.multiplicaDoisNumeros(10,2);
     }
 }

@@ -21,7 +21,7 @@ Estudo de Java do zero até Junior!
     - -[x] ~~Simples, multidimensionais, foreach~~
 7. -[ ] **Programação Orientada a Objetos**
     - -[x] ~~Classes e objetos~~
-    - -[ ] Métodos e parâmetros (primitivos e referência)
+    - -[x] ~~Métodos e parâmetros (primitivos e referência)~~
     - -[ ] Modificadores de acesso (private, get/set)
     - -[ ] Construtores e sobrecarga
     - -[ ] Blocos de inicialização e static

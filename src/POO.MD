@@ -53,13 +53,51 @@
 
 ---
 
+## 📅 - 05/03/2025⤵️
+
 ### Métodos
 
-- Nada mais que funções que fazem algo dentro da classe retornando algum valor ou não.
+- São funções que fazem algo dentro da classe retornando algum valor ou não.
+
+
+- ![img_3.png](img_3.png)
+    - Modificador de acesso: Usado para a visualização do acesso.
+  - Tipo de retorno:
+    - void - Não retorna nada, mas normalmente ou imprimi algo, ou altera por referência.
+      - Obs: Pode se usar o 'return', mas apenas para usá-lo como um 'break'.
+    - tipos primitivos - vai retornar um valor do seu respectivo tipo.
+  - Parâmetros: Usados para inserir algo que irá ser utilizado dentro do método.
   - ```
-    public void somaDoisNumeros() {
-          System.out.println("Soma dos números :");
-          System.out.println(10+10);
+    public void somaDoisNumeros(int num1, int num2) {
+        System.out.println("Soma dos números :");
+        System.out.print(num1+num2);
     }
     ```
-  - 'void' é que não irá retornar nada nesse método.
+- VarArgs: Um jeito de usar um array de mesmo tipo sem precisar declara-lo anteriormente.
+  - ```
+     // Varargs declaração como parâmetro dentro de um método
+    
+     public void metodName (int value, int... numbers){
+       [code]
+     }
+    ```
+  - ![img_4.png](img_4.png)
+    - Do número 2 até o final, ele transforma em um array de inteiros, sendo importante caso utilizar o varargs é mantelo como último parâmetro para que ele reconheça todos os valores inseridos.
+- >This: é usado para diferenciar um atributo da classe, de um parâmetro de mesmo nome.
+  >>```
+  >> public class Pessoa {
+  >>    public String nome;
+  >>    public int idade;
+  >>
+  >>    public void comparaIdade (int idade) {
+  >>       if (this.idade == idade) {
+  >>          System.out.println("Idades iguais!");
+  >>       }
+  >>    }
+  >> }
+  >>```
+
+---
+
+
+
