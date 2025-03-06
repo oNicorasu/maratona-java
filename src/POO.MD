@@ -99,5 +99,41 @@
 
 ---
 
+### Modificadores de Acesso
 
+- Private
+  - Usado para esconder atributos e métodos, assim apenas a própria objeto podendo utilizá-lo.
+  - ```
+    public class Pessoa {
+        private String nome;
+        private int idade;
+    }
+    ```
+- set
+  - Usado para inserir valor nos atributos, assim podendo por exceções e verificações no método, para ser válido os valores colocados.
+  - ``` 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setIdade(int idade) {
+        if (idade < 0) {
+            System.out.println("Idade inválida!");
+            return;
+        } else {
+            this.idade = idade;
+        }
+    }
+    ```
+- get
+  - Usado para pegar esses valores dos atributos.
+  - ``` 
+    public String getNome() {
+        return nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+    ```
 
