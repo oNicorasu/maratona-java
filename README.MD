@@ -22,9 +22,9 @@ Estudo de Java do zero até Junior!
 7. -[ ] **Programação Orientada a Objetos**
     - -[x] ~~Classes e objetos~~
     - -[x] ~~Métodos e parâmetros (primitivos e referência)~~
-    - -[ ] Modificadores de acesso (private, get/set)
-    - -[ ] Construtores e sobrecarga
-    - -[ ] Blocos de inicialização e static
+    - -[x] ~~Modificadores de acesso (private, get/set)~~
+    - -[x] ~~Construtores e sobrecarga~~
+    - -[x] ~~Blocos de inicialização e static~~
     - -[ ] Associação entre objetos
     - -[ ] Herança, polimorfismo e sobrescrita
     - -[ ] Classes abstratas e interfaces

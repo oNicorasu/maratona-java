@@ -137,3 +137,187 @@
     }
     ```
 
+--- 
+
+## 📅 - 07/03/2025⤵️
+
+### Sobrecarga de Métodos
+
+- Consiste em usar métodos de mesmo nome, porém com a quantidade ou tipos parâmetros diferentes.
+  - ``` 
+    public void init(String tipo, String nome, int episodios) {
+        this.tipo = tipo;
+        this.nome = nome;
+        this.episodios = episodios;
+    }
+
+    public void init(String tipo, String nome, int episodios, String genero) {
+        this.tipo = tipo;
+        this.nome = nome;
+        this.episodios = episodios;
+        this.genero = genero;
+    }
+    ```
+    
+---
+
+### Construtores
+
+- É um inicializador dos objetos, que se é posto alguns parâmetros, no momento de criação do objeto é obrigatório o uso deses parâmetros. Amenos que tenha uma sobrecarga de construtores e seja criado um construtor sem parâmetros.
+  - ``` 
+    // Na classe
+    
+    public Anime(String tipo, String nome, int episodios, String genero) {
+        System.out.println("Dentro do Anime Construtor");
+        this.tipo = tipo;
+        this.nome = nome;
+        this.episodios = episodios;
+        this.genero = genero;
+    }
+    
+    // Na main
+    
+    Anime anime = new Anime("TV","Solo Leveling",12,"Ação");
+    ```
+- Sobrecarga de Construtores
+  - ``` 
+    public Anime(String tipo, String nome, int episodios, String genero) {
+        System.out.println("Dentro do Anime Construtor");
+        this.tipo = tipo;
+        this.nome = nome;
+        this.episodios = episodios;
+        this.genero = genero;
+    }
+    
+    public Anime() {
+        
+    }
+    ```
+  - This()
+    - É obrigatoriamente a 1.ª linha do corpo de um construtor, quando utilizado.
+    - Só pode ser usado dentro de construtores.
+    - É usado para se referir a outro construtor.
+      - ![img_5.png](img_5.png)
+
+---
+
+### Blocos de Inicialização de Instância
+
+- São blocos de código que são executados quando uma instância de uma classe é criada.
+  - Eles são úteis quando a mesma inicialização precisa acontecer independentemente de qual construtor é chamado.
+  - É colocado antes dos construtores e após os atributos.
+  - É executado antes do construtor.
+  - ```
+    public class Pessoa {
+    private String[] hobbies;
+    
+    // Bloco de inicialização de instância
+    {
+        // Inicialização do array
+        hobbies = new String[5];
+        hobbies[0] = "Leitura";
+        hobbies[1] = "Música";
+        hobbies[2] = "Esportes";
+        hobbies[3] = "Culinária";
+        hobbies[4] = "Viagens";
+        
+        System.out.println("Array de hobbies inicializado no bloco de inicialização");
+    }
+    
+    // Construtores diferentes não precisam repetir a inicialização do array
+    public Pessoa() {
+        // O bloco de inicialização já inicializou o array hobbies
+        System.out.println("Construtor padrão executado");
+    }
+    
+    public Pessoa(String nome) {
+        // O bloco de inicialização já inicializou o array hobbies
+        // Apenas definimos o nome
+        System.out.println("Construtor com nome executado: " + nome);
+    }
+    ```
+    
+---
+
+### Modificador Estático
+
+- Faz o atributo pertencer à Classe e não mais somente os objetos, assim todos os objetos compartilham de um mesmo valor.
+  - ``` 
+    // Na classe
+    
+    public class Carro {
+      public static double velocidadeLimite = 250;
+      ...
+    }
+    
+    // Na main
+  
+    public static void main(String[] args) {
+      ...
+      carro.imprime();
+      carro2.imprime();
+    
+      Carro.velocidadeLimite = 450;
+    
+      carro3.imprime();
+    }
+    
+    // No terminal
+    
+    ---------------------
+    Marca: Toyota
+    Modelo: Supra
+    Velocidade Máxima: 280.0
+    Velocidade Limite: 250.0
+    ---------------------
+    Marca: Mitsubishi
+    Modelo: Lancer EVO X
+    Velocidade Máxima: 300.0
+    Velocidade Limite: 250.0
+    ---------------------
+    Marca: Mitsubishi
+    Modelo: Eclipse
+    Velocidade Máxima: 260.0
+    Velocidade Limite: 450.0
+    ```
+    
+---
+
+### Métodos Estáticos
+
+- É declarado usando a palavra-chave 'static' e pertence à classe em vez de pertencer a instâncias específicas da classe. Isso significa que você pode chamar um método estático sem precisar criar um objeto da classe.
+  1. Um método estático só pode acessar diretamente outros membros estáticos (variáveis ou métodos) da classe.
+  2. Não podem usar a palavra-chave this: Como não estão associados a nenhuma instância específica, não existe um "this" para referenciar.
+  3. São úteis quando você precisa de funcionalidades que não dependem do estado do objeto, como operações matemáticas, conversões, manipulação de strings ou lógica que é compartilhada entre todos os objetos de uma classe.
+  - ``` 
+    public static double getVelocidadeLimite() {
+        return Carro.velocidadeLimite;
+    }
+
+    public static void setVelocidadeLimite(double velocidadeLimite) {
+        Carro.velocidadeLimite = velocidadeLimite;
+    }
+    ```
+    
+---
+
+### Bloco de Inicialização Estático
+
+- É declarado usando a palavra-chave 'static'.
+  - ``` 
+    // Bloco de inicialização Estática
+    
+    static{
+        // Inicialização do array
+        episodios = new int[5];
+        for (int i = 0; i < episodios.length; i++){
+            episodios[i] = i+1;
+        }
+        System.out.println("Array de episodios inicializado no bloco de inicialização estático");
+    }
+    ```
+  - São executados apenas 1 vez quando a classe é carregada pela JVM.
+  - Não pode acessar atributos de instância.
+
+---
+
