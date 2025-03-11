@@ -321,3 +321,59 @@
 
 ---
 
+## 📅 - 10/03/2025⤵️
+
+### Arrays com Objetos
+
+- ``` 
+  // Na classe
+  
+  public class Jogador {
+    private String nome;
+
+    public void Imprimir() {
+        System.out.println("Nome: " + nome);
+    }
+  }
+  
+  // Na main
+  
+  public static void main(String[] args) {
+
+      Jogador jogador1 = new Jogador("Menino Ney");
+      Jogador jogador2 = new Jogador("Coutinho");
+      Jogador jogador3 = new Jogador("Rafinha");
+
+      Jogador[] jogadores = {jogador1, jogador2, jogador3};
+
+      for(int i = 0; i < jogadores.length; i++){
+          jogadores[i].Imprimir();
+      }
+  }
+  ```
+  - Mesmo jeito de declarar uma arrays normal só que usando as classes desejadas para o array.
+
+---
+
+### Associação
+
+- Pessoa 1 ---> 1 CPF 
+- Dono 1 ---> N Cachorro | 1 pra N 
+- Cachorro N ---> 1 Dono | N pra 1 
+- Aluno N ---> N Aula | N pra N
+
+1. 1 pra 1:
+   - Basta colocar uma classe como atributo de outra para fazer esse relacionamento 1 para 1.
+     - ```
+        public class Jogador {
+          private String nome;
+          private Time time;
+
+          public void imprimir() {
+          System.out.print("Nome: " + this.nome);
+            if(time != null){
+              System.out.println(" - Time: " + time.getNome());
+            }
+          }
+        }
+       ```
