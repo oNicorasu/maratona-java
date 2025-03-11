@@ -25,7 +25,7 @@ Estudo de Java do zero até Junior!
     - -[x] ~~Modificadores de acesso (private, get/set)~~
     - -[x] ~~Construtores e sobrecarga~~
     - -[x] ~~Blocos de inicialização e static~~
-    - -[ ] Associação entre objetos
+    - -[x] ~~Associação entre objetos~~
     - -[ ] Herança, polimorfismo e sobrescrita
     - -[ ] Classes abstratas e interfaces
     - -[ ] Enumerações

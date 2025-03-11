@@ -355,25 +355,80 @@
 
 ---
 
+## 📅 - 11/03/2025⤵️
+
 ### Associação
 
-- Pessoa 1 ---> 1 CPF 
-- Dono 1 ---> N Cachorro | 1 pra N 
-- Cachorro N ---> 1 Dono | N pra 1 
-- Aluno N ---> N Aula | N pra N
+- Uma associação estabelece como objetos de diferentes classes "conhecem" uns aos outros e interagem entre si.
+  - Pessoa 1 ---> 1 CPF 
+  - Dono 1 ---> N Cachorro | 1 pra N
+  - Aluno N ---> N Aula | N pra N
+- Características:
+  1. Independência: Os objetos associados existem independentemente uns dos outros. Se um objeto for destruído, o outro pode continuar existindo. 
+  2. Direção: A associação pode ser:
+     1. Unidirecional: Apenas uma classe conhece a outra
+     2. Bidirecional: Ambas as classes conhecem uma à outra 
+  3. Cardinalidade: Define quantos objetos participam da associação (um-para-um, um-para-muitos, muitos-para-muitos)
 
-1. 1 pra 1:
-   - Basta colocar uma classe como atributo de outra para fazer esse relacionamento 1 para 1.
-     - ```
-        public class Jogador {
-          private String nome;
-          private Time time;
 
-          public void imprimir() {
-          System.out.print("Nome: " + this.nome);
-            if(time != null){
-              System.out.println(" - Time: " + time.getNome());
-            }
-          }
+1. Associação Simples (one-to-one):
+   ``` 
+    public class Pessoa {
+        private CarteiradeIdentidade identidade; 
+        public Pessoa(CarteiradeIdentidade identidade) {
+            this.identidade = identidade;
         }
-       ```
+    }
+
+    public class CarteiradeIdentidade {
+        private String numero;
+
+        public CarteiradeIdentidade(String numero) {
+            this.numero = numero;
+        }
+    }
+   ```
+2. Associação Um-para-Muitos (one-to-many):
+   ``` 
+    public class Professor {
+        private String nome;
+        private Aluno[] alunos;
+    
+        public Professor(String nome, Aluno[] alunos) {
+            this.nome = nome;
+            this.alunos = alunos;
+        }
+    }
+
+    public class Aluno {
+        private String nome;
+
+        public Aluno(String nome) {
+            this.nome = nome;
+        }
+    }
+   ```
+3. Associação Muitos-para-Muitos (many-to-many):
+   ``` 
+    public class Estudante {
+        private String nome;
+        private Curso[] cursos;
+
+        // métodos para matricular em cursos
+    }
+
+    public class Curso {
+        private String nome;
+        private Estudante[] estudantes;
+
+        // métodos para adicionar estudantes
+    }
+   ```
+   
+---
+
+### Leitura de dados pelo console
+
+- ```
+  Scanner entrada = new Scanner(System.in);
+  ```
