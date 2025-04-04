@@ -431,4 +431,28 @@
 
 - ```
   Scanner entrada = new Scanner(System.in);
+  int numeros = entrada.nextInt();
   ```
+  
+---
+
+## 📅 - 04/04/2025⤵️
+
+### Herança
+
+- O conceito de uma subclasse ou classe filha herdar os atributos e métodos de uma classe pai.
+  - Java suporta apenas herança única (uma classe filha só pode herdar de uma classe pai) 
+  - Super - é feito para acessar os atributos e métodos da classe pai dentro da classe filha.
+  - Modificador de Acesso: Protected - Possibilita o acesso dos atributos e métodos que tiverem declarados como protected por subclasses e classes do mesmo pacote.
+  - Construtores - para lidarmos com construtores da classe pai na classe filha temos que fazer um cosntrutor e usar o super para referir ao construtor do pai.
+    - ```
+        public class Funcionario extends Pessoa {
+            private double salario;
+
+            public Funcionario(String nome){
+                super(nome);
+            }
+        }
+      ```
+      
+---
