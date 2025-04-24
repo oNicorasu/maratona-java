@@ -6,6 +6,7 @@ public class Funcionario extends Pessoa {
     public Funcionario(String nome){
         super(nome);
     }
+    public Funcionario(){}
 
     public double getSalario() {
         return salario;

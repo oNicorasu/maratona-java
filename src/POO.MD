@@ -456,3 +456,48 @@
       ```
       
 ---
+
+## 📅 - 23/04/2025⤵️
+
+### Sobrescrita do Método toString
+
+- Regras:
+  1. O nome do método tem que ser idêntico.
+  2. A quantidade de parâmetros também tem que ser a mesma independente da quantidade.
+  3. Tipo de retorno tem que ser exatamente a classe ou uma subclasse.
+  4. Não podemos restringir mais o método do que o original, apenas podemos "liberar mais acesso".
+- Também podemos sobrescrever o método "toString" da superclasse "Objets", assim como por exemplo podemos em vez de imprimir o diretório do pacote + um hash, podemos por um valor padrão como no exemplo abaixo:
+  - ```
+    @Override
+    public String toString() {
+        return "Nome: " + this.nome;
+    }
+    
+    // Na main:
+    
+        Anime anime = new Anime();
+        anime.setNome("Fire Force");
+        System.out.println(anime);
+    
+    // Console: "Nome: Fire Force"
+    ```
+    
+---
+
+### Modificador "final"
+
+- Regras:
+  1. É usado para definir constantes.
+  2. O nome da variável tem que ser em MAIÚSCULO e caso tenha mais de uma palavra, elas serão juntas com "_".
+  3. É utilizado em conjunto com o modificador "static". 
+     - Ex: "public static final double VELOCIDADE_MÁXIMA = 250;"
+  4. Para variáveis de objetos não podemos mudar as referências, mas podemos modificar o conteúdo do objeto. 
+  5. Para classes e métodos é mais usado para não podermos modificar/sobrescrevê-los e nem os herdar. Apenas para serem usados do jeito que foi projetado.
+
+---
+
+### Enumeração
+
+ - É uma classe.
+ - Usado para fazer uma escolha dentro de uma quantidade limitada de opções, para reduzir os erros e forçar uma certa tipagem.
+ - Também pode ser implementado com gets & sets(não tem tanto sentido nessa parte) e construtores. Assim podendo "traduzir" a opção para algum tipo mais utilizável, como Int ou até String.

@@ -5,6 +5,7 @@ public class Pessoa {
     private  String cpf;
     private Endereco endereco;
 
+    public Pessoa() {}
     public Pessoa(String nome){
         this.nome = nome;
     }
