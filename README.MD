@@ -27,7 +27,7 @@ Estudo de Java do zero até Junior!
     - -[x] ~~Blocos de inicialização e static~~
     - -[x] ~~Associação entre objetos~~
     - -[X] ~~Herança e sobrescrita~~
-    - -[ ] Enumerações e classes abstratas
+    - -[x] ~~Enumerações e classes abstratas~~
     - -[ ] Interfaces e polimorfismo
 8. -[ ] **Exceções**
     - -[ ] Tipos (checked, unchecked, customizadas)
